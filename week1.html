@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erazmus Germany 2024</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'text': '#0e190b',
+                        'background': '#f4faf4',
+                        'primary': '#69c350',
+                        'secondary': '#abe09a',
+                        'accent': '#82d66b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-emerald-500 to-emerald-900 font-mono">
+    <!-- Navbar -->
+    <nav class="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse bg-white p-2 rounded-2xl">
+                <img src="https://www.svgrepo.com/show/532068/sun-haze.svg" class="h-8" alt="pluk">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">pluk</span>
+            </a>
+
+            <!-- Hamburger Button -->
+            <button id="hamburger" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-md md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+				<svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke="#f4faf4" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke="#f4faf4" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke="#f4faf4" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+            </button>
+
+            <div class="hidden md:flex md:order-1">
+                <ul class="flex flex-col md:flex-row p-8 md:p-0 mt-4 font-medium border border-gray-100 rounded-2xl bg-gray-50 md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li><a href="index.html" class="block py-2 px-3 text-primary rounded-2xl md:bg-transparent md:p-2 md:hover:text-accent" aria-current="page">Home</a></li>
+                    <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" type="button" class="flex items-center justify-between w-full md:p-2 md:hover:text-primary dark:hover:bg-gray-600 dark:hover:text-white">Practice <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                        <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                                <li><a href="week1.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Week 1</a></li>
+                                <li><a href="week2.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Week 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown2" type="button" class="flex items-center justify-between w-full md:p-2 md:hover:text-primary dark:hover:bg-gray-600 dark:hover:text-white">Culture <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                        <div id="doubleDropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                                <li><a href="schkeuditz.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Schkeuditz</a></li>
+                                <li><a href="leipzig.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Leipzig</a></li>
+                                <li><a href="dresden.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dresden</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="freetime.html" class="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-2 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Free Time</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden" id="mobile-menu" style="display: none;">
+        <ul class="flex flex-col p-4 bg-gray-50 border-gray-100 rounded-b-2xl">
+            <li><a href="index.html" class="block py-2 text-primary md:bg-transparent md:p-2 md:hover:text-accent" aria-current="page">Home</a></li>
+            <li><a href="week1.html" class="block py-2 pt-8 hover:bg-gray-100">Week 1</a></li>
+            <li><a href="week2.html" class="block py-2 hover:bg-gray-100">Week 2</a></li>
+            <li><a href="schkeuditz.html" class="block py-2 hover:bg-gray-100">Schkeuditz</a></li>
+            <li><a href="leipzig.html" class="block py-2 hover:bg-gray-100">Leipzig</a></li>
+            <li><a href="dresden.html" class="block py-2 hover:bg-gray-100">Dresden</a></li>
+            <li><a href="freetime.html" class="block py-2 hover:bg-gray-100">Free Time</a></li>
+        </ul>
+    </div>
+
+    <div class="flex items-center min-h-screen pt-32 pb-12">
+		<section class="container max-w-4xl mx-auto justify-center px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+				<div class="flex flex-col text-left bg-gray-900 p-6 rounded-2xl">
+					<h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-100 drop-shadow-2xl">My Study Abroad Journey - Week 1</h2>
+					<p class="text-gray-100 mb-4 text-lg md:text-xl">
+						In the first week of my study abroad program in Germany, I applied my knowledge of HTML and CSS to real-world scenarios. It was an exhilarating experience to see my skills in action!
+					</p>
+					<p class="text-gray-100 text-lg md:text-xl">
+						In the electrical workshop, I had the opportunity to learn how to mount an electrical outlet and install smart home light switches. With the guidance of our tutor, I gained hands-on experience that brought my classroom knowledge to life.
+					</p>
+				</div>
+				<div class="grid grid-cols-1 gap-4 place-items-center">
+					<img src="week1.webp" alt="Leipzig" class="rounded-lg shadow-lg w-full max-w-md md:max-w-lg">
+					<img src="week1-2.webp" alt="Dresden" class="rounded-lg shadow-lg w-full max-w-md md:max-w-lg">
+				</div>
+			</div>
+		</section>
+	</div>
+	
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
